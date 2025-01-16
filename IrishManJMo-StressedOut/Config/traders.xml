@@ -1,0 +1,72 @@
+<StressedOut>
+<append xpath="//trader_item_group[@name='seeds']" >
+	<item name="plantedWheatSprout"/>
+	<item name="plantedBarleySprout"/>
+	<item name="plantedAgaveSprout"/>
+	<item name="plantedSugarCaneSprout"/>
+	<item name="plantedCocoaSprout"/>
+	<item name="plantedTobaccoSprout"/>
+	<item name="plantedIndicaSprout"/>
+	<item name="plantedSativaSprout"/>
+</append>
+
+<append xpath="//trader_item_group[@name='foodSupplies']" >
+	<item name="foodCropWheat" count="5,10"/>
+	<item name="foodCropFlour" count="5,10"/>
+	<item name="foodCropYeast" count="5,10"/>
+	<item name="foodCropRice" count="3,5"/>
+	<item name="foodCropBarley" count="5,10"/>
+	<item name="foodCropAgave" count="5,10"/>
+	<item name="foodCropSugarCane" count="5,10"/>
+	<item name="foodCropCocoa" count="5,10"/>
+	<item name="foodCropTobacco" count="1,3"/>
+	<item name="foodCropIndicaBud" count="1,3"/>
+	<item name="foodCropSativaBud" count="1,3"/>
+</append>
+
+<append xpath="//trader_item_group[@name='preparedFood']" >
+	<item name="foodHoneyHam" count="1,3"/>
+	<item name="foodPorkChops" count="1,5"/>
+	<item name="foodSushi" count="1,4"/>
+	<item name="foodBlueberryMuffins" count="5,20"/>
+	<item name="foodSmokedGame" count="1,2"/>
+	<item name="foodChickenNoodles" count="1"/>
+	<item name="foodRabbitStew" count="1,3"/>
+	<item name="foodBobcatBurgers" count="1"/>
+	<item name="foodBearChili" count="1"/>
+</append>
+
+<append xpath="//trader_item_group[@name='medicine']" >
+	<item name="drugIndicaJoint" count="0,1" prob="0.6"/>
+	<item name="drugSativaJoint" count="0,1" prob="0.3"/>
+	<item name="drugCigarette" count="1,10" prob="0.6"/>
+	<item name="drugCigar" count="1,5" prob="0.3"/>
+</append>
+
+<append xpath="//trader_item_group[@name='books']" >
+	<item name="bookANiceRelaxingBook" count="1,2" prob="0.4"/>
+</append>
+
+<append xpath="//trader_item_group[@name='rareMedicine']" >
+	<item name="drinkJarWhiskey" count="0,1" prob="0.2"/>
+	<item name="drinkJarVodka" count="0,1" prob="0.2"/>
+	<item name="drinkJarRum" count="0,1" prob="0.2"/>
+	<item name="drinkJarGin" count="0,1" prob="0.2"/>
+	<item name="drinkJarTequila" count="0,1" prob="0.2"/>
+	<item name="drinkJarSake" count="0,1" prob="0.2"/>
+	<item name="drinkJarBrandy" count="0,1" prob="0.2"/>
+</append>
+
+<append xpath="//trader_item_group[@name='traderGeneral']" >
+	<item name="drinkJarLager" count="0,1" prob="0.2"/>
+	<item name="drinkJarPorter" count="0,1" prob="0.2"/>
+	<item name="drinkJarPilsner" count="0,1" prob="0.2"/>
+	<item name="drinkJarStout" count="0,1" prob="0.2"/>
+	<item name="drinkJarPaleAle" count="0,1" prob="0.2"/>
+	<item name="drinkJarIPA" count="0,1" prob="0.2"/>
+	<item name="drinkJarPumpkinAle" count="0,1" prob="0.2"/>
+	<item name="drinkJarWheatAle" count="0,1" prob="0.2"/>
+	<item name="drinkJarBeer" count="0,1" prob="0.2"/>
+</append>
+
+</StressedOut>

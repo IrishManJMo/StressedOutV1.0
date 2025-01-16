@@ -1,0 +1,363 @@
+<StressedOut>
+
+<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+		<lootgroup name="craftbeers">
+			<item name="drinkJarLager"/>
+			<item name="drinkJarPorter"/>
+			<item name="drinkJarPilsner"/>
+			<item name="drinkJarStout"/>
+			<item name="drinkJarPaleAle"/>
+			<item name="drinkJarIPA"/>
+			<item name="drinkJarPumpkinAle"/>
+			<item name="drinkJarWheatAle"/>
+			<item name="drinkJarBeer"/>
+		</lootgroup>
+
+		<lootgroup name="liquors">
+			<item name="drinkJarWhiskey"/>
+			<item name="drinkJarVodka"/>
+			<item name="drinkJarRum"/>
+			<item name="drinkJarGin"/>
+			<item name="drinkJarTequila"/>
+			<item name="drinkJarSake"/>
+			<item name="drinkJarBrandy"/>
+		</lootgroup>
+
+		<lootgroup name="smokesTokes">
+			<item name="drugSativaJoint" count="1,2"/>
+			<item name="drugIndicaJoint" count="1,2"/>
+			<item name="drugCigarette" count="1,5"/>
+			<item name="drugCigar" count="1,3"/>
+		</lootgroup>
+
+		<lootgroup name="brewingSprouts">
+			<item name="plantedWheatSprout"/>
+			<item name="plantedBarleySprout"/>
+			<item name="plantedSugarCaneSprout"/>
+			<item name="plantedAgaveSprout"/>
+		</lootgroup>
+
+		<lootgroup name="smokeTokeSprouts">
+			<item name="plantedTobaccoSprout"/>
+			<item name="plantedSativaSprout"/>
+			<item name="plantedIndicaSprout"/>
+		</lootgroup>
+
+		<lootgroup name="foodCropSprouts">
+			<item name="plantedCocoaSprout"/>
+			<item name="plantedSugarCaneSprout"/>
+			<item name="plantedWheatSprout"/>
+		</lootgroup>
+
+		<lootgroup name="stressModSproutsAll">
+			<item group="brewingSprouts" loot_prob_template="low"/>
+			<item group="smokeTokeSprouts" loot_prob_template="low"/>
+			<item group="foodCropSprouts" loot_prob_template="low"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodCropsSmokes">
+			<item name="foodCropTobacco" count="3,5"/>
+			<item name="foodCropSativaBud" count="3,5"/>
+			<item name="foodCropIndicaBud" count="3,5"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodCropsFoodCommon">
+			<item name="foodCropSugarCane" count="1,2"/>
+			<item name="foodCropAgave" count="1,2"/>
+			<item name="foodCropCocoa" count="1,2"/>
+			<item name="foodCropBarley" count="1,2"/>
+			<item name="foodCropWheat" count="1,2"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodCropsRare">
+			<item name="foodCropRice" count="5,15"/>
+			<item name="foodCropYeast" count="5,15"/>
+			<item name="foodCropFlour" count="5,15"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodCrops">
+			<item group="stressModFoodCropsSmokes" loot_prob_template="low"/>
+			<item group="stressModFoodCropsFoodCommon" loot_prob_template="low"/>
+			<item group="stressModFoodCropsRare" loot_prob_template="veryLow"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodRaw">
+			<item name="foodRawPork" count="2,5"/>
+			<item name="foodRawGameMeat" count="2,5"/>
+			<item name="foodRawFish" count="2,5"/>
+			<item name="foodRawChicken" count="2,5"/>
+			<item name="foodRawRabbitMeat" count="2,5"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodCookedT1">
+			<item name="drinkJarBlueberryJuice"/>
+			<item name="foodPorkChops"/>
+			<item name="foodBlueberryMuffins"/>
+			<item name="foodRabbitStew"/>
+		</lootgroup>
+		
+		<lootgroup name="stressModFoodCookedT2">
+			<item name="foodHoneyHam"/>
+			<item name="foodSmokedGame"/>
+		</lootgroup>
+		
+		<lootgroup name="stressModFoodCookedT3">
+			<item name="foodSushi"/>
+			<item name="foodChickenNoodles"/>
+		</lootgroup>
+		
+		<lootgroup name="stressModFoodCookedT4">
+			<item name="foodBobcatBurgers"/>
+			<item name="foodBearChili"/>
+		</lootgroup>
+
+		<lootgroup name="stressModFoodAll">
+			<item group="stressModFoodCrops" count="1,2" loot_prob_template="low"/>
+			<item group="stressModFoodRaw" count="1,2" loot_prob_template="low"/>
+			<item group="stressModFoodCookedT1" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModFoodCookedT2" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModFoodCookedT3" count="0,1" loot_prob_template="veryLowDelayed"/>
+			<item group="stressModFoodCookedT4" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="stressModCookedFoodAll">
+			<item group="stressModFoodCookedT1" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModFoodCookedT2" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModFoodCookedT3" count="0,1" loot_prob_template="veryLowDelayed"/>
+			<item group="stressModFoodCookedT4" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+
+		<lootgroup name="stressModAll">
+			<item group="liquors"/>
+			<item group="craftbeers"/>
+			<item group="smokesTokes"/>
+			<item group="stressModSproutsAll"/>
+			<item group="stressModFoodAll"/>
+			<item name="bookANiceRelaxingBook"/>
+		</lootgroup>
+</insertAfter>
+
+		
+		
+		
+		<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']">
+			<item group="liquors" prob=".2" count="0,1"/>
+			<item name="drinkJarBlueberryJuice" prob=".1" count="0,1"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+			<item group="brewingSprouts"/>
+			<item group="smokeTokeSprouts"/>
+			<item group="foodCropSprouts"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']">
+			<item group="stressModSproutsAll"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='dumpster']">
+			<item group="stressModFoodAll" count="1,3" loot_prob_template="low"/>
+			<item group="stressModSproutsAll" count="1,5" loot_prob_template="med"/>
+			<item group="liquors" count="1" loot_prob_template="veryLow"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='cntBackpack']">
+			<item group="stressModFoodCookedT1" count="1" loot_prob_template="low"/>
+			<item group="smokesTokes" count="1,5" loot_prob_template="low"/>
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='cupboard']">
+			<item group="liquors" count="1,2" loot_prob_template="low"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='junk']">
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+			<item group="stressModFoodCookedT1" count="1" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='oven']">
+			<item group="stressModCookedFoodAll" count="1" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='garbage']">
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModSproutsAll" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='rollingTrashBin']">
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModSproutsAll" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='fastFoodTrash']">
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModSproutsAll" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='microwave']">
+			<item group="stressModCookedFoodAll" count="1" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='woodenDesk']">
+			<item group="smokesTokes" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='metalDesk']">
+			<item group="smokesTokes" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='cooler']">
+			<item group="craftbeers" count="1,5" loot_prob_template="high"/>
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='refrigerator']">
+			<item group="craftbeers" count="1,5" loot_prob_template="med"/>
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="med"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='refrigerator_retro']">
+			<item group="craftbeers" count="1,5" loot_prob_template="med"/>
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="med"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='refrigerator_steel']">
+			<item group="craftbeers" count="1,5" loot_prob_template="med"/>
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="med"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='bookcase']">
+			<item name="bookANiceRelaxingBook" count="1,2" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='beerCooler']">
+			<item group="craftbeers" count="3,5" loot_prob_template="high"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='shoppingCart']">
+			<item group="liquors" count="1,2" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='bookShelves']">
+			<item name="bookANiceRelaxingBook" count="1,2" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='zPackReg']">
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="veryLow"/>
+			<item group="stressModSproutsAll" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLow"/>
+			<item group="craftbeers" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='zPackStrong']">
+			<item group="stressModFoodAll" count="1,2" loot_prob_template="low"/>
+			<item group="stressModSproutsAll" count="1,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1,2" loot_prob_template="veryLow"/>
+			<item group="craftbeers" count="1,2" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='zPackBoss']">
+			<item group="stressModFoodAll" count="3,5" loot_prob_template="low"/>
+			<item group="stressModSproutsAll" count="5,7" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1,3" loot_prob_template="veryLow"/>
+			<item group="craftbeers" count="2,4" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='crackabookCrate']">
+			<item name="bookANiceRelaxingBook" count="1,2" loot_prob_template="high"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='buriedSuppliesT1']">
+			<item group="stressModFoodAll" count="1" loot_prob_template="veryLow"/>
+			<item group="stressModSproutsAll" count="1,2" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1" loot_prob_template="veryLowDelayed"/>
+			<item group="craftbeers" count="1,2" loot_prob_template="veryLow"/>
+			<item name="bookANiceRelaxingBook" count="1,2" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='buriedSuppliesT2']">
+			<item group="stressModFoodAll" count="1,3" loot_prob_template="low"/>
+			<item group="stressModSproutsAll" count="2,3" loot_prob_template="veryLow"/>
+			<item group="liquors" count="1,2" loot_prob_template="veryLow"/>
+			<item group="craftbeers" count="2,4" loot_prob_template="veryLow"/>
+			<item name="bookANiceRelaxingBook" count="1,2" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='foodPileSmall']">
+			<item group="stressModFoodCrops" count="1,3" loot_prob_template="low"/>
+			<item group="stressModFoodRaw" count="1,3" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='foodPileMed']">
+			<item group="stressModFoodCrops" count="1,3" loot_prob_template="low"/>
+			<item group="stressModFoodRaw" count="2,3" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='foodPileLarge']">
+			<item group="stressModFoodCrops" count="1,3" loot_prob_template="low"/>
+			<item group="stressModFoodRaw" count="2,3" loot_prob_template="med"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='liquorPileSmall']">
+			<item group="liquors" count="1,2" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='liquorPileMed']">
+			<item group="liquors" count="1,2" loot_prob_template="med"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='liquorPileLarge']">
+			<item group="liquors" count="1,2" loot_prob_template="high"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='sodaFountain']">
+			<item name="drinkJarBlueberryJuice" count="1,2" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='shamwayDrinks']">
+			<item name="drinkJarBlueberryJuice" count="1,2" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='shamwayFreezer']">
+			<item group="stressModFoodRaw" count="2,3" loot_prob_template="high"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='shamwayProduce']">
+			<item group="stressModFoodCropsFoodCommon" count="2,3" loot_prob_template="low"/>
+			<item group="stressModFoodCropsRare" count="2,3" loot_prob_template="low"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='bookPile']">
+			<item name="bookANiceRelaxingBook" count="1" loot_prob_template="veryLow"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='singleBooks']">
+			<item name="bookANiceRelaxingBook" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='crackabookShelves']">
+			<item name="bookANiceRelaxingBook" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</append>
+		
+		<append xpath="/lootcontainers/lootcontainer[@name='wineBarrel']">
+			<item name="drinkJarWhiskey" count="1,5" loot_prob_template="veryLow"/>
+			<item name="drinkJarTequila" count="1,5" loot_prob_template="veryLow"/>
+		</append>
+
+
+
+
+</StressedOut>

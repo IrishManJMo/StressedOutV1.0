@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<Name value="StressedOut" />
+	<DisplayName value="StressedOut" />
+	<Version value="1.0.0.1" /> 
+	<Description value="Introduces a stress management system with lots of new recipes" />
+	<Author value="IrishManJmo" />
+	<Website value="" />
+</xml>
